@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:NeutroniumTest"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+
+
+    <WebBrowser local:WebBrowserUtility.BindableSource="{Binding Address}" />
+
 </Window>

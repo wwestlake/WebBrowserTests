@@ -13,5 +13,15 @@ namespace NeutroniumTest
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            if (!WBEmulator.IsBrowserEmulationSet())
+            {
+                WBEmulator.SetBrowserEmulationVersion();
+            }
+
+            base.OnStartup(e);
+
+        }
     }
 }

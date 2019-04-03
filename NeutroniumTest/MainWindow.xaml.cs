@@ -23,6 +23,8 @@ namespace NeutroniumTest
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new MainViewModel();
         }
     }
 }
